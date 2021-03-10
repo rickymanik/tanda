@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TANDA - Dashboard</title>
+    <title>TANDA - tasks</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -30,7 +30,7 @@
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-            <!-- Sidebar - Brand -->
+           <!-- Sidebar - Brand -->
             <a style="text-align:center;" href="index.html">
                     <a><img src="img/logo.png" alt="logo" style="width:170px;height:80px;"></a>
             </a>
@@ -38,22 +38,22 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->           
-            <li class="nav-item active">
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
 
-              <!-- Nav Item - Survey -->
-              <li class="nav-item">
+             <!-- Nav Item - Survey -->
+             <li class="nav-item">
                 <a class="nav-link" href="surveys.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Surveys</span></a>
             </li>
 
             <!-- Nav Item - Tasks -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="tasks.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Tasks</span></a>
@@ -254,36 +254,17 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                    
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Tasks</h1>
                     </div>
-
+                    
                     <!-- Content Row -->
                     <div class="row">
-
+                        
                         <!-- Earnings (Monthly) Card Example -->
-                        <a class="col-xl-3 col-md-6 mb-4" href="points.html">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Points</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">250.000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-            
-                        <!-- Earnings (Monthly) Card Example -->
-                        <a class="col-xl-3 col-md-6 mb-4" href="tasks.html">
+                        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -295,7 +276,7 @@
                                                     <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">3</div>
                                                 </div>
                                                 <div class="col">
-                                                   
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -305,76 +286,69 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </div>
+                    </div>
 
-                        <!-- Pending Requests Card Example -->
-                        <a class="col-xl-3 col-md-6 mb-4" href="surveys.html">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Surveys</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
-                                        </div>
+                        <div class="row">
+                            <div class="col-xl-2 col-md-6 mb-4">
+                                <div class="card bg-warning text-white shadow">
+                                    <div class="card-body">
+                                    Surveys History
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+
+                    <!-- Avaliable Surveys Table -->
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Avaliable Surveys</h6>
+                            </div>
+                            <div class="card-body">
+                                 <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                 <br>
+                                      <thead>
+                                          <tr>
+                                             <th>Title</th>
+                                                <th>Questions</th>
+                                                <th>Respondents</th>
+                                                <th>Reward</th> 
+                                                <th>Time</th> 
+                                          </tr>
+                                     </thead>
+                                        <tbody> 
+                                            <tr>
+                                                <td>Kebijakan PSBB</td>
+                                                <td>15</td>
+                                                <td>50 of 100</td>
+                                                <td>1.500 Points</td>
+                                                <td>10 Minutes</td> 
+                                            </tr>
+                                            <tr>
+                                                <td>Penggunaan Vaksin Covid-19</td>
+                                                <td>12</td>
+                                                <td>199 of 200</td>
+                                                <td>1.200 Points</td>
+                                                <td>8 Minutes</td> 
+                                               </tr>
+                                            <tr>
+                                                <td>Gaya Hidup ditengah Pandemi Covid-19</td>
+                                                <td>10</td>
+                                                <td>999 of 1000</td>
+                                                <td>1.000 Points</td>
+                                                <td>6 Minutes</td> 
+                                            </tr>
+                                          
+                                      </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
 
                     <!-- Content Row -->
 
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Points Earnings Overview</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Survey Responses</h6>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4 pb-2">
-                                        <canvas id="myPieChart"></canvas>
-                                    </div>
-                                    <div class="mt-4 text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-primary"></i> Health
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Financial
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Travel
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <!-- /.container-fluid -->
 
@@ -422,23 +396,26 @@
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-
+     <!-- Bootstrap core JavaScript-->
+     <script src="vendor/jquery/jquery.min.js"></script>
+     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+     <!-- Core plugin JavaScript-->
+     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+ 
+     <!-- Custom scripts for all pages-->
+     <script src="js/sb-admin-2.min.js"></script>
+ 
+     <!-- Page level plugins -->
+     <script src="vendor/chart.js/Chart.min.js"></script>
+     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+ 
+ 
+     <!-- Page level custom scripts -->
+     <script src="js/demo/chart-area-demo.js"></script>
+     <script src="js/demo/chart-pie-demo.js"></script>
+     <script src="js/demo/datatables-demo.js"></script>
 </body>
 
 </html>
